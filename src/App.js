@@ -11,6 +11,8 @@ const[coinlist,setCoinlist]=useState([])
 const[page,setPage]=useState(1)
   async function getcoinlist(){
     const data=await axios.get('https://api.coincap.io/v2/assets')
+    const datab=await axios.get(' api.coincap.io/v2/assets/bitcoin/history?interval=d1')
+   console.log(datab)
     console.log(data.data)
     setCoinlist(data.data.data)
   }
