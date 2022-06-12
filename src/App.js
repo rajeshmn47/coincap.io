@@ -3,6 +3,8 @@ import './App.css';
 import { useEffect,useState } from 'react';
 import axios from 'axios'
 import millify from "millify";
+import Header from './header';
+import Footer from './footer';
 
 function App() {
 const[coinlist,setCoinlist]=useState([])
@@ -22,8 +24,37 @@ const handlepage=()=>{
   }
 }
   return (
- <div className='container'>
-coins are coming
+    <>
+  <div className='maincontainer'>
+    <Header/>
+    <div className="secondpart">
+        <div className="secondpart_div">         
+        <div>
+            <h5>MARKET CAP</h5>
+            <h5>$1.44T</h5>
+</div>
+<div>
+<h5>EXCHANGE VOL</h5>
+<h5>$68.51B</h5>
+</div>
+<div>
+<h5>ASSETS</h5>
+<h5>2,295</h5>
+</div>
+<div>
+<h5>EXCHANGES</h5>
+<h5>73</h5>
+</div>
+<div>
+<h5>MARKETS</h5>
+<h5>15,069</h5>
+</div>
+<div>
+<h5>BTC DOM INDEX</h5>
+<h5>36.4%</h5>
+</div>
+</div>
+<div className='container'>
 {coinlist?
 <div className='coinstable'>
   <table id='table'>
@@ -67,15 +98,18 @@ coins are coming
 <td>
 {millify(c.volumeUsd24Hr)}
 </td>
-<td>
-{millify(c.changePercent24Hr)}
+<td className={c.changePercent24Hr>0?'positive':'negative'}>
+{millify(c.changePercent24Hr)}%
 </td>
 </tr></>)}
 </table>
 <button className='viewmore' onClick={()=>handlepage()}>view more</button>
 </div>:'loading'}
- </div>
-  );
+ </div>  
+            </div>
+            <Footer/>
+            </div>
+ </> );
 }
 
 export default App;
