@@ -8,7 +8,7 @@
   flex-direction: column;
   position: absolute;
   top: 25%;
-  left: 12%;
+  left: 0%;
   z-index: 1000000;
   color: black;
 }
@@ -108,6 +108,9 @@ color: #FFFFFF;
 height: 30vh;
 position: relative;
 }
+.secondpart h5{
+  font-size: 16px;
+}
 .secondpart_div{
   display: flex;
   justify-content: space-evenly;
@@ -125,5 +128,26 @@ position: relative;
 }
 .footer{
   background: linear-gradient(to right, rgb(63, 81, 181), rgb(100, 181, 246)) rgb(255, 255, 255) !important;
-padding: 2vh 2vw;
+padding: 3vh 3vw;
+
+margin-top: 3vh;
+width: 98.5vw;
+box-sizing: border-box;
+display: flex;
+justify-content: space-evenly;
+box-sizing: border-box;
+color: #FFFFFF;
+}
+.footer div{
+  width: 20vw;
+}
+.footer h3{
+  color: #dfdcdb;
+  font-size: 14px;
+  margin: 0.5vh 0vw;
+  font-weight: 500;
+}
+.footer h5{
+  font-weight: 600;
+  margin: 1vh 0vw;
 }

@@ -12,11 +12,11 @@ export const Header=()=>{
 <div>swap</div>
             </div>
             <div className="middleheader">
-            <div>coins</div>
+            <div><img src='https://coincap.io/static/logos/black.svg' alt='' width='60'/></div>
                 </div>
                 <div className="rightheader">
-                <div>@</div>
-                <div>=</div>
+                <div>search</div>
+                <div>settings</div>
                 <button className="connectwallet">connect wallet</button>
                 </div>
         </div>

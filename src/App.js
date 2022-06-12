@@ -104,11 +104,15 @@ const handlepage=()=>{
 </tr></>)}
 </table>
 <button className='viewmore' onClick={()=>handlepage()}>view more</button>
+
 </div>:'loading'}
+<Footer/>
  </div>  
+
             </div>
-            <Footer/>
+       
             </div>
+          
  </> );
 }
 
