@@ -84,6 +84,8 @@
   justify-content: space-evenly;
   align-items: center;
   padding: 2vh 2vw;
+  text-transform: capitalize;
+ 
 }
 .leftheader{
   display: flex;
