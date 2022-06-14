@@ -1,4 +1,4 @@
-Live demo [coincapioclone.netlify.app]
+Live demo [coincapioclone.netlify.app](https://coincapioclone.netlify.app)
 
 # Getting Started with Create React App
 
