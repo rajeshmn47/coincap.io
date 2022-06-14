@@ -1,3 +1,4 @@
+![Web capture_14-6-2022_185033_coincap io](https://user-images.githubusercontent.com/24763499/173587343-d1f428cc-9bcf-4b6e-9885-c04f6b02cbbf.jpeg)
 Live demo [coincapioclone.netlify.app](https://coincapioclone.netlify.app)
 
 # Getting Started with Create React App
